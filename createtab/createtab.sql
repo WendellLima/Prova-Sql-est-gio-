@@ -1,0 +1,31 @@
+CREATE TABlE PESSOA(
+	PESSOA_ID smallint PRIMARY KEY,
+	NOME VARCHAR (20) NOT null,
+	DATA_NASC date NOT null,
+	LGPD boolean NOT null,
+	createdAt date NOT null
+);
+
+
+
+CREATE TABlE TELEFONE(
+	TELEFONE_ID smallint PRIMARY KEY,
+	PESSOA_ID smallint NOT null REFERENCES PESSOA(PESSOA_ID),
+	DDD VARCHAR (2),
+	NUMERO VARCHAR (9),
+	createdAt date NOT null
+);
+
+
+CREATE TABlE COMPRA(
+	COMPRA_ID smallint PRIMARY KEY,
+	PESSOA_ID smallint NOT null REFERENCES PESSOA(PESSOA_ID),
+	VALOR numeric CHECK (VALOR > 0) NOT null,
+	createdAt date NOT null
+);
+
+CREATE TABlE COMPRA_ESTORNADA(
+	COMPRA_ESTORNADA_ID smallint PRIMARY KEY,
+	COMPRA_ID smallint NOT null REFERENCES COMPRA(COMPRA_ID),
+	createdAt date NOT null
+);
