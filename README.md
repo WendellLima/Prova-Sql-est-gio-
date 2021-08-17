@@ -25,4 +25,9 @@ fiz essa escolha pelas questões não haver necessidade em trabalhar com horas, 
 ![views](https://user-images.githubusercontent.com/43830716/129653161-6da63b54-8817-45e7-9a5a-ffe3f6682431.PNG)
 
 
+## Imagens das querys rodando está na documentação abaixo
+
+https://docs.google.com/document/d/1ucHR0OBD740_ParzHPqxt3bagks6xHnXDPdG4FWaUGw/edit?usp=sharing
+
+
 
